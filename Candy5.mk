@@ -16,8 +16,8 @@
 # Inherit device configuration
 $(call inherit-product, device/htc/primou/full_primou.mk)
 
-# Inherit common CM configuration
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit common candy5 configuration
+$(call inherit-product, vendor/candy5/config/common_full_phone.mk)
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -26,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRIVATE_BUILD_DESC="htc_primou-$(TARGET_BUILD_VARIANT) $(PLATFORM_VERSION) $(BUILD_ID) $(shell date +%Y%m%d%H%M%S) test-keys"
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_primou
+PRODUCT_NAME := candy5_primou
 PRODUCT_GMS_CLIENTID_BASE := android-htc-rev
 
 # Release name
